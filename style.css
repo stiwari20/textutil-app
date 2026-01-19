@@ -1,0 +1,57 @@
+h2 {
+  margin: 30px auto;
+  max-width: 800px;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+#box {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  padding: 15px;
+  font-size: 1.1rem;
+  resize: vertical;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: box-shadow 0.2s;
+}
+#box:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.button-container button {
+  min-width: 200px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.button-container button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.darkMode {
+  background-color: #28282b;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  #box {
+    font-size: 1rem;
+  }
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .button-container button {
+    width: 90%;
+  }
+}
